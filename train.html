@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>my first website</title>
+   <link rel="stylesheet" href="trial.css">
+</head>
+<body>
+<form>
+  <h1> Temperature conversion: </h1>
+  <input type="number" id = "textbox" value = "0">
+    <div class="radio-group">
+      <label class="radio-item">
+        <input type="radio" id="tofahrenheit" name="unit">
+        celsius➡️fahrenheit
+      </label>
+      <label class="radio-item">
+        <input type = "radio" id = "tocelsius" name = "unit">
+        fahrenheit➡️celsius
+      </label>
+      <label class="radio-item">
+        <input type = "radio" id = "tokelvin2" name = "unit"> 
+        kelvin➡️fahrenheit
+      </label>
+      <label class="radio-item">
+        <input type = "radio" id = "tokelvin" name = "unit"> 
+        kelvin➡️celsius
+    </div>
+ <button type="button" onclick="convert()">submit</button>
+ <p id="result"></p>
+</div>
+</form>
+  <script src="index.js"></script> 
+</body>
+</html>
