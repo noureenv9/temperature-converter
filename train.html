@@ -5,30 +5,15 @@
    <link rel="stylesheet" href="trial.css">
 </head>
 <body>
-<form>
-  <h1> Temperature conversion: </h1>
-  <input type="number" id = "textbox" value = "0">
-    <div class="radio-group">
-      <label class="radio-item">
-        <input type="radio" id="tofahrenheit" name="unit">
-        celsius➡️fahrenheit
-      </label>
-      <label class="radio-item">
-        <input type = "radio" id = "tocelsius" name = "unit">
-        fahrenheit➡️celsius
-      </label>
-      <label class="radio-item">
-        <input type = "radio" id = "tokelvin2" name = "unit"> 
-        kelvin➡️fahrenheit
-      </label>
-      <label class="radio-item">
-        <input type = "radio" id = "tokelvin" name = "unit"> 
-        kelvin➡️celsius
-    </div>
- <button type="button" onclick="convert()">submit</button>
- <p id="result"></p>
+<div id="container">
+  <h1>Dice Roller</h1>
+  <label># of dice:</label>
+  <input type="number" id="numofdice" value="1" min="1">
+  <button onclick="rolldice()">Roll dice</button>
+  <div id="diceresult"></div> 
+  <div id="diceimage"></div>
 </div>
-</form>
+  
   <script src="index.js"></script> 
 </body>
 </html>
